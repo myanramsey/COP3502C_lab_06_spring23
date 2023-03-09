@@ -15,7 +15,13 @@ def encode(phrase):
     return new_phrase
 
 def decode(phrase):
-    pass
+    decoded_password = ""
+    for element in phrase:
+        new_element = int(element)
+        decoded_element = new_element - 3
+        new_decoded_element = str(decoded_element)
+        decoded_password += new_decoded_element
+    return decoded_password
 
 def main():
     # looping menu
